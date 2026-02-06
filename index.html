@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Capricho | Repostería Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Dulce Capricho</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#favoritos">Menú</a></li>
+                <li><a href="#chef">La Chef</a></li>
+                <li><a href="#contacto" class="btn-nav">Pedir Presupuesto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content fade-in">  
+            <h1>Dulzura en cada bocado</h1>
+            <p>Repostería artesanal hecha con amor e ingredientes 100% naturales.</p>
+            <a href="#favoritos" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section id="favoritos" class="section-padding">
+        <h2 class="section-title fade-in">Nuestros Favoritos</h2>
+        <div class="container products-grid">
+            <article class="product-card fade-in">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1578775887804-699de7086ff9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZXNjYWtlfGVufDB8fDB8fHww" alt="Cheesecake de Frutos Rojos">
+                </div>
+                <div class="card-info">
+                    <h3>Cheesecake Real</h3>
+                    <p>Base crocante de nuez y mermelada casera de frutos del bosque.</p>
+                    <span class="price">$4500</span>
+                </div>
+            </article>
+
+            <article class="product-card fade-in">
+                <div class="img-container">
+                    <img src="macarons.jpg" alt="Caja de Macarons">
+                </div>
+                <div class="card-info">
+                    <h3>Macarons Parisinos</h3>
+                    <p>Caja de 6 unidades. Sabores: Pistacho, Frambuesa y Chocolate.</p>
+                    <span class="price">$3200</span>
+                </div>
+            </article>
+
+            <article class="product-card fade-in">
+                <div class="img-container">
+                    <img src="chocolate_cake.jpg" alt="Torta Mousse de Chocolate">
+                </div>
+                <div class="card-info">
+                    <h3>Mousse de Chocolate</h3>
+                    <p>Triple capa de chocolate belga con un toque de naranja.</p>
+                    <span class="price">$5100</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="chef" class="section-padding bg-alt">
+        <div class="container split-layout">
+            <div class="split-text fade-in">
+                <h2 class="section-title text-left">Sobre la Chef</h2>
+                <p>Hola, soy <strong>Clara</strong>. Mi pasión por la pastelería comenzó en la cocina de mi abuela. Creo firmemente que un postre no solo debe ser delicioso, sino también hermoso.</p>
+                <p>Cada torta que horneo utiliza huevos de campo, manteca real y frutas de estación. Sin premezclas, sin conservantes. Solo sabor auténtico.</p>
+            </div>
+            <div class="split-image fade-in">
+                <img src="cheff.jpg" alt="La Chef Cocinando">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding">
+        <div class="container contact-container fade-in">
+            <h2 class="section-title">Tortas Personalizadas</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Cuéntanos tu idea y la haremos realidad.</p>
+            
+            <form id="orderForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha del Evento</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="sabor">Sabor Preferido</label>
+                        <select id="sabor" name="sabor">
+                            <option value="vainilla">Vainilla Clásica</option>
+                            <option value="chocolate">Chocolate Intenso</option>
+                            <option value="redvelvet">Red Velvet</option>
+                            <option value="limon">Limón y Amapola</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Detalles (Temática, Alergias, etc.)</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Solicitar Presupuesto</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Dulce Capricho</h3>
+                <p>Haciendo la vida más dulce desde 2015.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Av. Siempre Viva 123</p>
+                <p>+54 9 11 1234-5678</p>
+            </div>
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Dulce Capricho. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
