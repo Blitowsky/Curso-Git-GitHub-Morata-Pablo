@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajá con Nosotros | Instituto Shark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profesores.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">🦈 Instituto Shark</div>
+        <nav class="navbar">
+            <a href="index.html" class="btn-secundario" style="color: white; border-color: white;">← Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main class="profesores-container">
+        <section class="intro-profesores">
+            <h1>Sumate a nuestro equipo docente</h1>
+            <p>Buscamos profesionales apasionados por las ciencias exactas. Si te encanta enseñar y querés formar parte de un instituto en pleno crecimiento, dejanos tus datos.</p>
+        </section>
+
+        <section class="form-wrapper">
+            <form id="formProfesores" class="formulario-academico">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Alan Turing">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="alan@ejemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="especialidad">Especialidad Principal *</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="" disabled selected>Seleccioná una materia...</option>
+                        <option value="matematica">Matemáticas (Álgebra, Cálculo)</option>
+                        <option value="fisica">Física (Mecánica, Electromagnetismo)</option>
+                        <option value="programacion">Programación / Sistemas</option>
+                        <option value="quimica">Química</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin">URL de tu perfil de LinkedIn o CV (Online) *</label>
+                    <input type="text" id="linkedin" name="linkedin" required placeholder="https://linkedin.com/in/tu-perfil">
+                    <small class="error-msg" id="error-url">Por favor, ingresá un enlace válido (debe incluir http:// o https://).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="disponibilidad">Disponibilidad Horaria *</label>
+                    <select id="disponibilidad" name="disponibilidad" required>
+                        <option value="" disabled selected>Seleccioná un turno...</option>
+                        <option value="manana">Turno Mañana (8:00 - 13:00)</option>
+                        <option value="tarde">Turno Tarde (13:00 - 18:00)</option>
+                        <option value="noche">Turno Noche (18:00 - 22:00)</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">Acepto los <a href="terminos.html" target="_blank">Términos y Condiciones</a> y el tratamiento de mis datos.</label>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">Enviar Postulación</button>
+                
+                <div id="mensaje-exito" class="mensaje-exito oculto">
+                    ¡Gracias por postularte! Hemos recibido tu perfil correctamente. Nos pondremos en contacto a la brevedad.
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Instituto Shark. Educación de excelencia.</p>
+    </footer>
+
+    <script src="profesores.js"></script>
+</body>
+</html>
