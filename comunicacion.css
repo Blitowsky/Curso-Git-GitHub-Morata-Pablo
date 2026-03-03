@@ -1,0 +1,107 @@
+/* comunicacion.css */
+
+/* 1. Reset y Empuje del Footer al fondo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Contenedor Principal */
+.comunicacion-container {
+    flex: 1; /* Esto empuja el footer hacia abajo si hay poco contenido */
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.intro-comunicacion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 3. Estilo del Saludo Dinámico */
+.saludo-dinamico {
+    /* El color lo maneja el JS, pero aquí definimos el estilo */
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: color 0.5s ease;
+}
+
+/* 4. Grilla de Tarjetas */
+
+.grid-comunicacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card-comunicacion {
+    background: var(--blanco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-comunicacion:hover {
+    transform: translateY(-5px);
+}
+
+.card-comunicacion .icono {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card-comunicacion h2 {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+
+/* 5. Enlaces de Redes Sociales */
+.social-links a {
+    display: block;
+    color: var(--color-secundario);
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: rgba(30, 144, 255, 0.1); /* Efecto hover suave */
+    color: var(--color-primario);
+}
+
+/* 6. Contenedor del Mapa (Integrado en la grilla) */
+.map-wrapper {
+    grid-column: 1 / -1; /* Ocupa todo el ancho en desktop */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    border: 5px solid white;
+    height: 450px;
+}
+
+/* Ajuste para que el mapa se vea bien en móviles */
+@media (max-width: 768px) {
+    .saludo-dinamico {
+        font-size: 1.8rem;
+    }
+    
+    .map-wrapper {
+        height: 300px;
+    }
+}
