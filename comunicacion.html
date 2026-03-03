@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Shark Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comunicacion.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">🦈 Shark Institute</a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#materias">Materias</a></li>
+                <li><a href="comunicacion.html">Contacto</a></li>
+                <li><a href="profesores.html">Trabajá con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="comunicacion-container">
+        <section class="intro-comunicacion">
+            <h1 id="saludo-usuario" class="saludo-dinamico">Cargando saludo...</h1>
+            <p>Encontranos en nuestra sede central o contactanos por redes.</p>
+        </section>
+
+        <div class="grid-comunicacion">
+            <section class="card-comunicacion">
+                <div class="icono">📅</div>
+                <h2>Horarios</h2>
+                <p>Lunes a Viernes: 09:00 - 18:00</p>
+                <p>Sábados: 10:00 - 13:00</p>
+            </section>
+
+            <section class="card-comunicacion">
+                <div class="icono">🌐</div>
+                <h2>Redes Sociales</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://www.whatsapp.com" target="_blank">WhatsApp</a>
+                </div>
+            </section>
+
+            <section class="card-comunicacion">
+                <div class="icono">📍</div>
+                <h2>Dirección</h2>
+                <p>Plaza Independencia, Mendoza, Argentina</p>
+            </section>
+        </div>
+
+        <section class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.12341234!2d-68.8449!3d-32.8895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0917637f90e3%3A0x6e9a037b5f63d09a!2sPlaza%20Independencia!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>📍 Plaza Independencia, Mendoza</p>
+            <p>📞 +54 9 261 XXX-XXXX</p>
+            <a href="comunicacion.html" style="color: var(--color-secundario); text-decoration: none; font-weight: bold; font-size: 0.9rem;">
+                Ver horarios y mapa →
+            </a>
+        </div>
+    </footer>
+
+    <script src="comunicacion.js"></script>
+</body>
+</html>
