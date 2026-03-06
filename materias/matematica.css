@@ -1,0 +1,131 @@
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE MATEMÁTICA --- */
+
+.matematica-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro-matematica {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-matematica h1 {
+    color: var(--color-primario);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.intro-matematica p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- CONTENEDOR DE BLOQUES --- */
+.bloques-matematica {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* --- TARJETAS DE NIVEL --- */
+.card-nivel {
+    background-color: var(--blanco);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-nivel.secundario {
+    border-color: #FFD700; /* Dorado para secundario */
+}
+
+.card-nivel.universitario {
+    border-color: #FF6B6B; /* Rojo para universitario */
+}
+
+.card-nivel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.nivel-icono {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-nivel h2 {
+    color: var(--color-primario);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.temario-list {
+    margin-bottom: 20px;
+}
+
+.temario-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.temario-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.temario-list li:last-child {
+    border-bottom: none;
+}
+
+.temario-list strong {
+    color: var(--color-secundario);
+}
+
+/* --- BOTONES EN LAS TARJETAS --- */
+.card-nivel .btn-secundario {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.card-nivel .btn-secundario:hover {
+    background-color: var(--color-secundario);
+    color: var(--blanco);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .intro-matematica h1 {
+        font-size: 2rem;
+    }
+
+    .bloques-matematica {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-nivel {
+        padding: 25px;
+    }
+
+    .nivel-icono {
+        font-size: 2.5rem;
+    }
+
+    .card-nivel h2 {
+        font-size: 1.5rem;
+    }
+}
